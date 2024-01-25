@@ -1,6 +1,7 @@
 module NDPriorityQueues
 
-export NDPriorityQueue, enqueue!, draw, dequeue!, dequeue_pair!
+export NDPriorityQueue, draw
+import DataStructures
 
 abstract type TreeNode{K,V<:Number} end
 
@@ -76,7 +77,7 @@ function Base.setindex!(pq::NDPriorityQueue, v, k)
             _push_priority_up(pq.index[k])
         end
     else
-        enqueue!(pq, k, v)
+        DataStructures.enqueue!(pq, k, v)
     end
 end
 
@@ -111,7 +112,7 @@ function _enqueue!(pq::NDPriorityQueue, node::Node, k, v)
     return node
 end
 
-function enqueue!(pq::NDPriorityQueue, k, v)
+function DataStructures.enqueue!(pq::NDPriorityQueue, k, v)
     if haskey(pq.index, k)
         throw(ArgumentError("enqueue!(pq, k, v): pq already has key k"))
     end
@@ -188,13 +189,13 @@ function Base.delete!(pq::NDPriorityQueue, k)
     return pq
 end
 
-function dequeue!(pq::NDPriorityQueue)
+function DataStructures.dequeue!(pq::NDPriorityQueue)
     k = draw(pq)
     delete!(pq, k)
     return k
 end
 
-function dequeue_pair!(pq::NDPriorityQueue)
+function DataStructures.dequeue_pair!(pq::NDPriorityQueue)
     k = draw(pq)
     v = pq.index[k].priority
     delete!(pq, k)

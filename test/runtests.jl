@@ -1,10 +1,11 @@
 using Test
 using NDPriorityQueues
+using DataStructures
 
 @testset "Test" begin
     pq = NDPriorityQueue([(1, 1)])
     pq[2] = 2
-    pq[3] = 3
+    enqueue!(pq, 3, 3)
     @info pq
     @test pq[2] == 2
     pq[2] = 4
