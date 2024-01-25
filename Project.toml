@@ -1,6 +1,6 @@
+authors = ["Andrey Zakharevich <andreyzakharevich@gmail.com>"]
 name = "NDPriorityQueues"
 uuid = "62ce6dcf-afc2-4b9e-bf6a-7a1353c578d1"
-authors = ["Andrey Zakharevich <andreyzakharevich@gmail.com>"]
 version = "0.1.0"
 
 [deps]
@@ -11,3 +11,6 @@ Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [targets]
 test = ["Test"]
+
+[compat]
+julia = "1.9"
