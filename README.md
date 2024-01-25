@@ -1,5 +1,7 @@
 # NDPriorityQueues
 
+[![Build Status](https://github.com/Andrey Zakharevich <andreyzakharevich@gmail.com>/NDPriorityQueues.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/Andrey Zakharevich <andreyzakharevich@gmail.com>/NDPriorityQueues.jl/actions/workflows/CI.yml?query=branch%3Amain)
+
 This package provides a class for a non-deterministic priority queue. It allows to draw random items from the queue with a probability proportional to their priority.
 
 Usage:
