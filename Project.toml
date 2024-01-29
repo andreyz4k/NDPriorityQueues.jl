@@ -1,7 +1,7 @@
+authors = ["Andrey Zakharevich <andreyzakharevich@gmail.com>"]
 name = "NDPriorityQueues"
 uuid = "62ce6dcf-afc2-4b9e-bf6a-7a1353c578d1"
-authors = ["Andrey Zakharevich <andreyzakharevich@gmail.com>"]
-version = "0.1.0"
+version = "0.1.1"
 
 [deps]
 DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
